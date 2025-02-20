@@ -1,5 +1,8 @@
-import type React from "react"
+import './globals.css'
+
+import InstallBanner from "@/components/InstallBanner"
 import type { Metadata } from "next"
+import type React from "react"
 
 export const metadata: Metadata = {
   title: {
@@ -71,6 +74,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <InstallBanner />
       <body>{children}</body>
     </html>
   )
@@ -78,4 +82,3 @@ export default function RootLayout({
 
 
 
-import './globals.css'
